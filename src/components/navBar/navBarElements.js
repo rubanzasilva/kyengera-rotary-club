@@ -39,11 +39,12 @@ export const NavBarContainer = styled.div`
 export const NavLogo = styled(LinkR)`
  color:#000000;
  justify-self:flex-start;
+ justify-content:flex-start;
  cursor:pointer;
  font-size:1.5rem;
  display:flex;
  align-items:center;
- ${'' /* margin-right:16px; */}
+ margin-right:-16px; 
  left:0;
  font-weight:bold;
  text-decoration:none;
@@ -80,6 +81,7 @@ export const NavMenu = styled.ul`
  list-style:none;
  text-align:center;
  font-family:"Lato","Roboto","Helvetica Neue",sans-serif;
+ width:80%;
 
  @media screen and (max-width:760px) {
      display:none;
@@ -142,36 +144,37 @@ export const NavBtn = styled.nav`
  font-family:"Lato","Roboto","Helvetica Neue",sans-serif; */}
 `
 
-// export const NavBtnLink = styled(LinkR)`
-//  color:#0000FF;
-//  display: flex;
-//  justify-content:flex-end;
-//  margin-left:16px;
-//  align-items:center;
-//  font-style: normal;
-//  text-align:center;
-//  font-weight:400;
-//  font-size: 16px;
-//  line-height: 1.381;
-//  padding:12px;
+export const NavBtnLink = styled(LinkR)`
+ color:#0000FF;
+ display: flex;
+ justify-content:flex-end;
+ margin-left:16px;
+ align-items:center;
+ font-style: normal;
+ text-align:center;
+ font-weight:400;
+ font-size: 16px;
+ line-height: 1.381;
+ padding:12px;
  
-//  &:hover {
-//      transition: all 0.2s ease-in-out;
-//      border-bottom: 2px solid #00a886;
-//  }
-// `
+ &:hover {
+     transition: all 0.2s ease-in-out;
+     border-bottom: 2px solid #00a886;
+ }
+`
 
-// export const Img = styled.img`  
-//     height:78px;
-//     width:64px;
-//     object-fit: contain;
-//     border-radius: 4px;
+export const Img = styled.img`  
+    height:78px;
+    // width:64px;
+    object-fit: contain;
+    border-radius: 4px;
+    justify-content:flex-start;
 
-//     @media screen and (max-width:960px) {
-//      transition: 0.8s all ease;
-//      height:44px;
-//  }
-// `
+    @media screen and (max-width:960px) {
+     transition: 0.8s all ease;
+     height:44px;
+ }
+`
 
 // export const SocialMedia = styled.section`
 //  max-width:1000px;
