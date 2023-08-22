@@ -73,7 +73,7 @@ export const MobileIcon = styled.div`
      transform: translate(-100%,60%);
      font-size:1.8rem;
      cursor:pointer;
-     color:#35241A;
+     color:#0067C8;
  }
 `
 
@@ -97,7 +97,7 @@ export const NavItem = styled.li`
 
 //to change the color of the links in the navbar
 export const NavLinks = styled(LinkR)`
- ccolor:#D0CFCD;
+ color:#D0CFCD;
  display:flex;
  align-items:center;
  text-decoration:none;
@@ -120,7 +120,7 @@ export const NavLinks = styled(LinkR)`
 }
 
 &:active {
-    border-bottom: 2px solid green;
+    border-bottom: 2px solid #0067C8;
     color:#0067C8;
 }
 
