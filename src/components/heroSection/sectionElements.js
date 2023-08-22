@@ -107,3 +107,5 @@ export const BtnWrap = styled.div`
         flex-basis:100%;
     }
 `
+
+

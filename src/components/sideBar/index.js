@@ -1,14 +1,14 @@
 import React from 'react'
 //import {SideBarContainer,Icon,CloseIcon, SideBtnWrap} from './SideBarElements';
-import {SideBarContainer, Icon ,CloseIcon,SideBarWrapper,SideBarMenu,SideBtnWrap,SideBarRoute,SocialMedia, SocialMediaWrap,  SocialIcons, SocialIconLink} from './sideBarElements'
-import {Typography } from "antd";
+import {SideBarContainer, Icon ,CloseIcon,SideBarWrapper,SideBarMenu,SideBarRoute, SideBarLink, SideBarBtn, SideBarBtnLink} from './sideBarElements'
+// import {Typography } from "antd";
 //import "antd/dist/antd.css";
 // import { RightOutlined } from '@ant-design/icons';
-import {FaTwitter, FaEnvelope, FaLinkedin, FaGithub} from 'react-icons/fa';
+// import {FaTwitter, FaEnvelope, FaLinkedin, FaGithub} from 'react-icons/fa';
 
-const { Title } = Typography;
+// const { Title } = Typography;
 
-const SideBar = ({title1,title5,isOpen,toggle}) => {
+const SideBar = ({isOpen,toggle,info1,info2,info3,info4,info5,info6}) => {
     return (
         <SideBarContainer 
         // isOpen={isOpen} onClick={toggle}>
@@ -25,48 +25,31 @@ const SideBar = ({title1,title5,isOpen,toggle}) => {
                 <SideBarMenu>
                     {/* <SideBarLink to="/About"> */}
                     <SideBarRoute to="/">   
-                    <Title level={5} style={{color:"#000000",fontSize:"17px",lineHeight:"1.10722",fontWeight:"400",letterSpacing:".004em",marginTop:"6px",fontFamily:"Lato,Roboto"}}>About me</Title>
+                    <SideBarLink>{info1}</SideBarLink>
+                    {/* <Title level={5} style={{color:"#000000",fontSize:"17px",lineHeight:"1.10722",fontWeight:"400",letterSpacing:".004em",marginTop:"6px",fontFamily:"Lato,Roboto"}}>{info1}</Title> */}
                     </SideBarRoute>
 
                     <SideBarRoute to="/"> 
-                    <Title level={5} style={{color:"#000000",fontSize:"17px",lineHeight:"1.10722",fontWeight:"400",letterSpacing:".004em",fontFamily:"Lato,Roboto"}}>Projects of Interest</Title>
+                        <SideBarLink>{info2}</SideBarLink>
+                    {/* <Title level={5} style={{color:"#000000",fontSize:"17px",lineHeight:"1.10722",fontWeight:"400",letterSpacing:".004em",fontFamily:"Lato,Roboto"}}>{info2}</Title> */}
                     </SideBarRoute>
                     
-                    {/* <SideBarLink to="/RoastedBeans"> */}
+
                     <SideBarRoute to="/">
-                    <Title level={5} style={{color:"#000000",fontSize:"17px",lineHeight:"1.10722",fontWeight:"400",letterSpacing:".004em",fontFamily:"Lato,Roboto"}}>My Blog</Title>
+                        <SideBarLink>{info3}</SideBarLink>
                     </SideBarRoute>
 
-                    <SideBarRoute to="https://d3q0oijmiduzg2.cloudfront.net/rubanzasilver/resumeSilva.pdf" target='_blank'>
-                    <Title level={5} style={{color:"#000000",fontSize:"17px",lineHeight:"1.10722",fontWeight:"400",letterSpacing:".004em",fontFamily:"Lato,Roboto"}}>My Resume</Title>
+                    <SideBarRoute to="/" target='_blank'>
+                        <SideBarLink>{info4}</SideBarLink>
                     </SideBarRoute>
-                   
 
-                    <SideBtnWrap>
-                    <SocialMedia>
-                <SocialMediaWrap>
-                    <SocialIcons>
-                        <SocialIconLink href="https://www.linkedin.com/in/silver-rubanza/" target="_blank" arial-label="LinkedIn">
-                            <FaLinkedin/>
-                        </SocialIconLink>
-                        <SocialIconLink href="https://twitter.com/countfettucine/" target="_blank" arial-label="Twitter">
-                            <FaTwitter/>
-                        </SocialIconLink>
-                        <SocialIconLink href="https://github.com/rubanzasilva/" target="_blank" aria-label="Github">
-                            <FaGithub/>
-                        </SocialIconLink>
-                        <SocialIconLink href="mailto:rubanza@rubanzasilver.xyz" target="_blank" arial-label="Email">
-                            <FaEnvelope/>
-                        </SocialIconLink>
-                    </SocialIcons>
-                </SocialMediaWrap>
-            </SocialMedia>
-{/* 
-                        <SideBarRoute to="/ContactUs">
-                        <Button to="/" type="link" size="medium"  style={{color:"#008000",
-                       borderRadius:"6px",minWidth:"100px",marginTop:"15px"  }}>Contact Us { <RightOutlined />} </Button>
-                        </SideBarRoute> */}
-                    </SideBtnWrap>
+                    <SideBarRoute to="/" target='_blank'>
+                        <SideBarLink>{info5}</SideBarLink>
+                    </SideBarRoute>
+                
+                <SideBarBtn>
+                    <SideBarBtnLink>{info6}</SideBarBtnLink>
+                </SideBarBtn>
 
                 </SideBarMenu>
             </SideBarWrapper>

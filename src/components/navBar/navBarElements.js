@@ -57,7 +57,7 @@ export const NavLogo = styled(LinkR)`
         align-items:center;
         align-text:center;
         padding-top:16px;
-        margin-right:34%;  
+        // margin-right:34%;  
     }
 `
 
