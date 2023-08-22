@@ -18,13 +18,3 @@ export const homeObjZ = {
     id:'about',
     info3:'Catalog',
 };
-
-export const homeObjA = {
-    id:'about',
-    info4:'Blog',
-};
-
-export const homeObjB = {
-    id:'about',
-    info5:'Contact Us',
-};

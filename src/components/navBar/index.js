@@ -14,7 +14,7 @@ const Navbar = ({toggle,info1,info2,info3,info4,info5,info6,imga}) => {
           <Nav>
               <NavBarContainer>
                   <NavLogo to='/'>
-                    <Img src={'https://d3q0oijmiduzg2.cloudfront.net/kyengera-town/Rotary%20Logo_EN21.png'} alt='ty'/>
+                    <Img src={'https://d3q0oijmiduzg2.cloudfront.net/kyengera-town/Rotary%20Logo_EN21.png'} alt='Rotary Club Of Kyengera Town'/>
                   </NavLogo>
 
                   <MobileIcon onClick={toggle}>

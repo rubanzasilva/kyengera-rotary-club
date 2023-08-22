@@ -15,6 +15,7 @@ export const Nav = styled.nav`
  cursor:pointer;
  font-family:"Lato","Roboto","Helvetica Neue",sans-serif;
 
+
  @media screen and (max-width:960px) {
      transition: 0.8s all ease;
      height:80px;
@@ -25,7 +26,7 @@ export const NavBarContainer = styled.div`
  display:flex;
  justify-content:space-between;
  height:80px;
- width:80%;
+ width:90%;
  padding: 0;
  max-width:2400px;
 
@@ -42,6 +43,7 @@ export const NavLogo = styled(LinkR)`
  justify-content:flex-start;
  cursor:pointer;
  font-size:1.5rem;
+ line-height:24px;
  display:flex;
  align-items:center;
  margin-right:-16px; 
@@ -81,7 +83,7 @@ export const NavMenu = styled.ul`
  list-style:none;
  text-align:center;
  font-family:"Lato","Roboto","Helvetica Neue",sans-serif;
- width:80%;
+ width:100%;
 
  @media screen and (max-width:760px) {
      display:none;
@@ -95,7 +97,7 @@ export const NavItem = styled.li`
 
 //to change the color of the links in the navbar
 export const NavLinks = styled(LinkR)`
- ccolor:black;
+ ccolor:#D0CFCD;
  display:flex;
  align-items:center;
  text-decoration:none;
@@ -103,23 +105,23 @@ export const NavLinks = styled(LinkR)`
  height:100%;
  cursor:pointer;
  font-family:"Lato","Roboto","Helvetica Neue",sans-serif;
- font-size:16px;
+ font-size:14px;
+ line-height:22px;
 
  
-
  &:visited {
-    color:blurywood;
+    color:#901F93;
 }
 
 &:hover {
-    color:#00a886;
-    border-bottom: 2px solid #00a886;
+    color:#F7A81B;
+    border-bottom: 2px solid #F7A81B;
     
 }
 
 &:active {
     border-bottom: 2px solid green;
-    color:blue;
+    color:#0067C8;
 }
 
 @media screen and (max-width:960px) {
@@ -145,30 +147,33 @@ export const NavBtn = styled.nav`
 `
 
 export const NavBtnLink = styled(LinkR)`
- color:#0000FF;
+ color:#0067C8;
  display: flex;
- justify-content:flex-end;
- margin-left:16px;
+ justify-content:flex-start;
+ margin-left:-16px;
  align-items:center;
  font-style: normal;
  text-align:center;
  font-weight:400;
  font-size: 16px;
- line-height: 1.381;
- padding:12px;
+ line-height:24px;
+ width:120px;
+//  padding:12px;
  
  &:hover {
      transition: all 0.2s ease-in-out;
-     border-bottom: 2px solid #00a886;
+     border-bottom: 2px solid #F7A81B;
  }
 `
 
 export const Img = styled.img`  
-    height:78px;
+    // height:78px;
     // width:64px;
+    height:120px;
     object-fit: contain;
     border-radius: 4px;
     justify-content:flex-start;
+    margin-right:48px;
 
     @media screen and (max-width:960px) {
      transition: 0.8s all ease;

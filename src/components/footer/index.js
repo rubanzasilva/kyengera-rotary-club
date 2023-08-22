@@ -1,10 +1,10 @@
 import React from 'react';
-import {FooterContainer,FooterWrap,FooterLinksContainer,FooterLinksWrapper,FooterLinkItems,FooterLink,SocialMedia,SocialMediaWrap,SocialLogo,WebsiteRights} from './footerElements';
+import {FooterContainer,FooterWrap,FooterLinksContainer,FooterLinksWrapper,FooterLinkItems,FooterLink,SocialMedia,SocialMediaWrap,WebsiteRights, FooterLogo, Img} from './footerElements';
 // import {BackTop} from 'antd';
 import { FloatButton } from 'antd';
 
 
-const Footer = () => {
+const Footer = ({info1,info2,info3,info4,info5,info6}) => {
     return (
         <FooterContainer id='footerContainer'>
         <FooterWrap id='footerWrap'>
@@ -17,8 +17,7 @@ const Footer = () => {
 
                      {/* <FooterLinkTitle>My Resume</FooterLinkTitle> */}
 
-              
-                     <FooterLink to="https://d3q0oijmiduzg2.cloudfront.net/rubanzasilver/resumeSilva.pdf" target='_blank'>Resume</FooterLink>
+                     <FooterLink to="https://d3q0oijmiduzg2.cloudfront.net/rubanzasilver/resumeSilva.pdf" target='_blank'>{info1}</FooterLink>
 
                  </FooterLinkItems>
 
@@ -28,7 +27,7 @@ const Footer = () => {
 
                      {/* <FooterLinkTitle>My Projects Of Interest</FooterLinkTitle> */}
    
-                     <FooterLink href="https://d3q0oijmiduzg2.cloudfront.net/rubanzasilver/antelopes.jpeg" target='_blank'>Projects Of Interest</FooterLink>
+                     <FooterLink href="https://d3q0oijmiduzg2.cloudfront.net/rubanzasilver/antelopes.jpeg" target='_blank'>{info2}</FooterLink>
                     
                      
                  </FooterLinkItems>
@@ -39,7 +38,7 @@ const Footer = () => {
 
                      {/* <FooterLinkTitle>My Blog</FooterLinkTitle> */}
 
-                     <FooterLink href="mailto:rubanza@rubanzasilver.xyz" target="_blank" arial-label="Email">Email Me</FooterLink>
+                     <FooterLink href="mailto:rubanza@rubanzasilver.xyz" target="_blank" arial-label="Email">{info3}</FooterLink>
 
                  </FooterLinkItems>
 
@@ -48,7 +47,7 @@ const Footer = () => {
 
                      {/* <FooterLinkTitle>Email Me</FooterLinkTitle> */}
    
-                     <FooterLink href="https://twitter.com/countfettucine/" target="_blank" arial-label="Twitter">Twitter</FooterLink>
+                     <FooterLink href="https://twitter.com/countfettucine/" target="_blank" arial-label="Twitter">{info4}</FooterLink>
 
                  </FooterLinkItems>
                  
@@ -63,11 +62,16 @@ const Footer = () => {
 
             <SocialMedia>
                 <SocialMediaWrap>
-                    <SocialLogo to="/"> 
-                    <p>Silver Rubanza</p> 
-                    </SocialLogo>
+                    <FooterLogo>
+                        <Img src={'https://d3q0oijmiduzg2.cloudfront.net/kyengera-town/Rotary%20Logo_EN21.png'} alt='Kyengera Town rotary logo'></Img>
 
-                    <WebsiteRights>Built by Me - Silva with ReactJs © {new Date().getFullYear()}</WebsiteRights>
+                    </FooterLogo>
+
+                    {/* <SocialLogo to="/"> 
+                    <p>Silver Rubanza</p> 
+                    </SocialLogo> */}
+
+                    <WebsiteRights>Built by Rubanza Silver © {new Date().getFullYear()}</WebsiteRights>
 
                 </SocialMediaWrap>
             </SocialMedia>
