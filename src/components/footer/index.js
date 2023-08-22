@@ -8,9 +8,13 @@ const Footer = ({info1,info2,info3,info4,info5,info6}) => {
     return (
         <FooterContainer id='footerContainer'>
         <FooterWrap id='footerWrap'>
+            
 
             <FooterLinksContainer id='footerLinksContainer'>
+                
                 <FooterLinksWrapper id='footerLinksWrapper'>
+
+                
 
 
                  <FooterLinkItems id='footerLinkItemA'>
@@ -50,7 +54,11 @@ const Footer = ({info1,info2,info3,info4,info5,info6}) => {
                      <FooterLink href="https://twitter.com/countfettucine/" target="_blank" arial-label="Twitter">{info4}</FooterLink>
 
                  </FooterLinkItems>
+
                  
+
+                 
+
 
                  
 
@@ -58,23 +66,24 @@ const Footer = ({info1,info2,info3,info4,info5,info6}) => {
 
             </FooterLinksContainer>
 
+            <FooterLogo>
+                        <Img src={'https://d3q0oijmiduzg2.cloudfront.net/kyengera-town/Rotary%20Logo_EN21.png'} alt='Kyengera Town rotary logo'></Img>
+
+                    </FooterLogo>
+
         
 
-            <SocialMedia>
+            {/* <SocialMedia>
                 <SocialMediaWrap>
                     <FooterLogo>
                         <Img src={'https://d3q0oijmiduzg2.cloudfront.net/kyengera-town/Rotary%20Logo_EN21.png'} alt='Kyengera Town rotary logo'></Img>
 
                     </FooterLogo>
 
-                    {/* <SocialLogo to="/"> 
-                    <p>Silver Rubanza</p> 
-                    </SocialLogo> */}
-
                     <WebsiteRights>Built by Rubanza Silver © {new Date().getFullYear()}</WebsiteRights>
 
                 </SocialMediaWrap>
-            </SocialMedia>
+            </SocialMedia> */}
 
         
             
