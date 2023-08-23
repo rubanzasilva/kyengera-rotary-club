@@ -98,7 +98,7 @@ const Footer = ({info1,info2,info3,info4,info5,info6}) => {
 
         </FooterWrap>
         <FloatButton.BackTop/>
-            
+        <WebsiteRights>Built by Me - Silva with ReactJs © {new Date().getFullYear()}</WebsiteRights>
         </FooterContainer>
     )
 }
