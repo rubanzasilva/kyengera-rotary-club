@@ -8,6 +8,7 @@ export const FooterContainer = styled.footer`
  width:100%;
  border:2px solid #54565A;
 
+
 @media screen and (max-width:820px) {
     padding-top:32px;
     width:100%;
@@ -23,7 +24,7 @@ export const FooterWrap = styled.div`
  max-width:100%;
  margin:0 auto;
 
- @media screen and (max-width:820px) {
+ @media screen and (max-width:920px) {
 //  padding:48px 24px;
  display:flex;
  flex-direction:column;
