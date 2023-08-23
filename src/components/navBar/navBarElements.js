@@ -97,7 +97,8 @@ export const NavItem = styled.li`
 
 //to change the color of the links in the navbar
 export const NavLinks = styled(LinkR)`
- color:#D0CFCD;
+//  color:#D0CFCD;
+ color:#54565A;
  display:flex;
  align-items:center;
  text-decoration:none;
