@@ -1,13 +1,17 @@
 import React from 'react';
-import {FooterContainer,FooterWrap,FooterLinksContainer,FooterLinksWrapper,FooterLinkItems,FooterLink,SocialMedia,SocialMediaWrap,WebsiteRights, FooterLogo, Img} from './footerElements';
+import {FooterContainer,FooterWrap,FooterLinksContainer,FooterLinksWrapper,FooterLinkItems,FooterLink,SocialMedia,SocialMediaWrap,WebsiteRights,SocialIcons,SocialIconLink, FooterLogo, Img} from './footerElements';
 // import {BackTop} from 'antd';
 import { FloatButton } from 'antd';
-
+import {FaTwitter, FaEnvelope, FaLinkedin, FaGithub} from 'react-icons/fa';
 
 const Footer = ({info1,info2,info3,info4,info5,info6}) => {
     return (
         <FooterContainer id='footerContainer'>
         <FooterWrap id='footerWrap'>
+        <FooterLogo id='footerLogo'>
+                        <Img src={'https://d3q0oijmiduzg2.cloudfront.net/kyengera-town/Rotary%20Logo_EN21.png'} alt='Kyengera Town rotary logo'></Img>
+
+                    </FooterLogo>
             
 
             <FooterLinksContainer id='footerLinksContainer'>
@@ -56,6 +60,7 @@ const Footer = ({info1,info2,info3,info4,info5,info6}) => {
                  </FooterLinkItems>
 
                  
+                 
 
                  
 
@@ -65,25 +70,28 @@ const Footer = ({info1,info2,info3,info4,info5,info6}) => {
                 </FooterLinksWrapper>
 
             </FooterLinksContainer>
-
-            <FooterLogo>
-                        <Img src={'https://d3q0oijmiduzg2.cloudfront.net/kyengera-town/Rotary%20Logo_EN21.png'} alt='Kyengera Town rotary logo'></Img>
-
-                    </FooterLogo>
-
-        
-
-            {/* <SocialMedia>
+            <SocialMedia>
                 <SocialMediaWrap>
-                    <FooterLogo>
-                        <Img src={'https://d3q0oijmiduzg2.cloudfront.net/kyengera-town/Rotary%20Logo_EN21.png'} alt='Kyengera Town rotary logo'></Img>
-
-                    </FooterLogo>
-
-                    <WebsiteRights>Built by Rubanza Silver © {new Date().getFullYear()}</WebsiteRights>
+                <SocialIcons>
+                        <SocialIconLink href="https://www.linkedin.com/in/silver-rubanza/" target="_blank" arial-label="LinkedIn">
+                            <FaLinkedin/>
+                        </SocialIconLink>
+                        <SocialIconLink href="https://twitter.com/countfettucine/" target="_blank" arial-label="Twitter">
+                            <FaTwitter/>
+                        </SocialIconLink>
+                        <SocialIconLink href="https://github.com/rubanzasilva/" target="_blank" aria-label="Github">
+                            <FaGithub/>
+                        </SocialIconLink>
+                        <SocialIconLink href="mailto:rubanza@rubanzasilver.xyz" target="_blank" arial-label="Email">
+                            <FaEnvelope/>
+                        </SocialIconLink>
+                    </SocialIcons>
 
                 </SocialMediaWrap>
-            </SocialMedia> */}
+            </SocialMedia>
+        
+
+            
 
         
             
