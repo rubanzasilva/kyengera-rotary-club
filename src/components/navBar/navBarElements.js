@@ -84,6 +84,7 @@ export const NavMenu = styled.ul`
  text-align:center;
  font-family:"Lato","Roboto","Helvetica Neue",sans-serif;
  width:100%;
+ padding:8px;
 
  @media screen and (max-width:760px) {
      display:none;
@@ -102,7 +103,7 @@ export const NavLinks = styled(LinkR)`
  display:flex;
  align-items:center;
  text-decoration:none;
- padding:0 24px;
+ padding:0 1.5em;
  height:100%;
  cursor:pointer;
  font-family:"Lato","Roboto","Helvetica Neue",sans-serif;
