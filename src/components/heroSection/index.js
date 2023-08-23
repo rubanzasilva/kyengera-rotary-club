@@ -1,55 +1,47 @@
-import React  from 'react';
-import { GridWrapper,GridItem , SectionText,ImgWrap,Img} from './sectionElements';
-import {Typography } from "antd";
-//import {FaWhatsapp,FaTwitter, FaEnvelope, FaLinkedin, FaGithub} from 'react-icons/fa';
 
-const { Title , Text } = Typography;
+import React from 'react';
+import {HeroContainer,HeroWrapper, HeroBg,VideoBg, HeroH1, HeroP, BtnWrap} from './sectionElements';
+//import Icon1 from '../../images/maize1.png';
+// import Video from '../../Videos/video.mp4'
+import {Button ,Typography } from "antd";
+// import "antd/dist/antd.css";
+// import { BtnWrap } from '../Section/SectionElements.js';
 
-const HeroSection = ({headline,text,text1,text2,img,alt,TitleText}) => {
+const { Title } = Typography;
 
-    // import useState from react to use hover
-    // const [hover,setHover] = useState(false);
 
-    // const onHover = () => {
-    //     setHover(!hover)
-    // };
+const Hero = ({title,headline,buttonText,video}) => {
 
     return (
-        <GridWrapper >
+        <HeroContainer id="heroContainer">
+        <HeroBg>
+            {/* <VideoBg autoPlay loop muted src={video} type='video/mp4'    /> */}
+            <VideoBg autoPlay loop muted src={'https://d322abd807wvow.cloudfront.net/suwik-photos/heroVidB.mp4'} type='video/mp4'    />
+        </HeroBg>
 
-    
-        <GridItem >
-            
-        <SectionText className='InfoSectionTextWrap'>
-            
-                    
-        <Title level={3} style={{fontSize:"1.75em",color:"#35241A",lineHeight:"1.10722",fontWeight:"400",letterSpacing:"-.005em",marginTop:"6px",marginBottom:"15px",fontFamily:"Lato"}}> {TitleText} </Title>
-        
-                     
-                     <Text  style={{color:"#35241A", fontSize:"16px",lineHeight:"1.381",fontWeight:"200",letterSpacing:".016em",marginTop:"6px",marginBottom:"15px",fontFamily:"Roboto"}}>{headline}</Text>
-                     <Text  style={{color:"#35241A", fontSize:"16px",lineHeight:"1.381",fontWeight:"200",letterSpacing:".016em",marginBottom:"15px",fontFamily:"Roboto"}}>{text}</Text>
-                     <Text  style={{color:"#35241A", fontSize:"16px",lineHeight:"1.381",fontWeight:"200",letterSpacing:".016em",marginBottom:"15px",fontFamily:"Roboto"}}>{text1}</Text>
-                     <Text  style={{color:"#35241A", fontSize:"16px",lineHeight:"1.381",fontWeight:"200",letterSpacing:".016em",marginBottom:"15px",fontFamily:"Roboto"}}>{text2}</Text>
-                   
-                 </SectionText>
-        
-        </GridItem>
-        
+        <HeroWrapper>
+            <HeroH1> <Title level={1} style={{color:"#ffffff",borderColor:"2px 2px 2px #00a886",fontSize:"48px"}}>{title}</Title></HeroH1>
+            <HeroP> <Title level={2} style={{color:"#ffffff"}}>{headline}</Title></HeroP>
+            <BtnWrap>
+            <Button type="link" size="large" href='/ProductCatalog' style={{color:"#ffffff",borderColor:"#00a886",background:"#000",
+                       borderRadius:"6px",minWidth:"100px", marginTop:"32px" }}>See Our Catalogue</Button>
+                        
+            {/* <Button type="primary" size="large" style={{background:"#cf1322",
+                      borderColor:"red",minWidth:"200px" , borderRadius:"6px" }}>{buttonText}</Button> */}
+            </BtnWrap>
 
+        </HeroWrapper>
 
-        <GridItem>
+           {/* <HeroWrapper id="wrapper">
 
-        <ImgWrap className='InfoSectionImageWrap'>
-                         <Img src={img} alt={alt}/>
-                     </ImgWrap>       
+        <HeroContent id="heroContent">
+                      <HeroImageCard />
+              </HeroContent>
 
-        </GridItem>
-        
-        
-        </GridWrapper>
+        </HeroWrapper> */}
+        </HeroContainer>
 
-    
     )
 }
 
-export default HeroSection;
+export default Hero

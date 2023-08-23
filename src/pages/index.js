@@ -6,6 +6,8 @@ import Footer from '../components/footer';
 import { homeObjX } from '../components/navBar/data';
 import { homeObjA } from '../components/footer/data';
 import { homeObjY } from '../components/sideBar/data';
+import Hero from '../components/heroSection';
+import { homeObjB } from '../components/heroSection/data';
 // import { SectionAinfo } from '../components/heroSection/data';
 // import Projects from '../components/projects';
 // import { projectsObjA } from '../components/projects/data';
@@ -21,6 +23,7 @@ const Home = () => {
         <div className='homeWrapper'>
             <SideBar isOpen={isOpen} toggle={toggle} {...homeObjY}/>
             <Navbar toggle={toggle} {...homeObjX}/>
+            <Hero {...homeObjB}/>
             {/* <HeroSection {...SectionAinfo} />
             <Projects {...projectsObjA}/> */}
             <Footer {...homeObjA}/>
