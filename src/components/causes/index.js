@@ -41,7 +41,6 @@ export default function Causes({title,cardContentTitle,cardContentTitleA, cardCo
 
       <CardActions>
         <Button  href='https://antelopeclassifier.rubanzasilver.xyz/' target='_blank' size="small">{cardActionsText}</Button>
-        <Button  href='https://huggingface.co/spaces/silvaKenpachi/antelopeClassifier?logs=build' target='_blank' size="small">{cardActionsTextX}</Button>
       </CardActions>
     </Card>
       </GridItem>
@@ -96,33 +95,10 @@ export default function Causes({title,cardContentTitle,cardContentTitleA, cardCo
 
 <CardActions>
   <Button  href='https://www.suwik.xyz/' target='_blank' size="small">{cardActionsTextC}</Button>
-  <Button  href='https://github.com/rubanzasilva/suwikEcommerce' target='_blank' size="small">{cardActionsTextD}</Button>
 </CardActions>
 </Card>
 </GridItem>
 
-
-<GridItem id='gridItemFour'>
-      <Card sx={{ maxWidth: 345 }}>
-      <CardMedia
-        component="img"
-        alt={altA}
-        height="200"
-        image={imgA}
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          {cardContentTitleA}
-        </Typography>
-        <Typography variant="body2" color="text.secondary">
-          {cardContentBodyA}
-        </Typography>
-      </CardContent>
-      <CardActions>
-        <Button href='https://github.com/rubanzasilva/my-website' size="small">{cardActionsTextA}</Button>
-      </CardActions>
-    </Card>
-      </GridItem>
 
 
     </GridWrapper>
