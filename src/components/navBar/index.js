@@ -8,7 +8,7 @@ import { Img } from '../navBar/navBarElements';
 
 // const { Title } = Typography;
 
-const Navbar = ({toggle,info1,info2,info3,info4,info5,info6,imga}) => {
+const Navbar = ({toggle,info1,info2,info3,info4,info5,info6}) => {
     return (
         <>
           <Nav>
