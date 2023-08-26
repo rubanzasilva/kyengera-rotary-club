@@ -9,12 +9,3 @@ export const homeObjX = {
     imga:'https://d3q0oijmiduzg2.cloudfront.net/kyengera-town/Rotary%20Logo_EN21.png',
 };
 
-export const homeObjY = {
-    id:'about',
-    info2:'News & Events',
-};
-
-export const homeObjZ = {
-    id:'about',
-    info3:'Catalog',
-};
